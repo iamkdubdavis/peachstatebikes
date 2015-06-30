@@ -2,15 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Dosis, Verdana, sans-serif;
   text-align: center;
   color: #e8600c !important;
+  letter-spacing: 0.05em;
 }
 
 h2 {
   text-align: center;
-  font-family: Verdana, sans-serif;
+  font-family: Dosis, Verdana, sans-serif;
   color: #21600c;
+  letter-spacing: 0.05em;
 }
 
 img {
