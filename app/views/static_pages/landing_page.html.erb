@@ -1,5 +1,5 @@
 <div id="container">  
-  <div id="carousel-example-generic " class="carousel slide container" data-ride="carousel">
+  <div id="carousel-example-generic" class="carousel slide bikeCarousel container" data-ride="carousel">
     <!-- INDICATORS -->
     <ol class="carousel-indicators">
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -8,7 +8,7 @@
     </ol>
 
     <!-- WRAPPER FOR SLIDES -->
-    <div class="carousel-inner bikeCarousel" role="listbox">
+    <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
       <div class="item<%= " active" if product == @products.first %>">
           <%= image_tag(product.image_url) %>
