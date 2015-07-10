@@ -2,11 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background: -webkit-linear-gradient(90deg, #ffb347 10%, #ffcc33 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #ffb347 10%, #ffcc33 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #ffb347 10%, #ffcc33 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #ffb347 10%, #ffcc33 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #ffb347 10%, #ffcc33 90%); /* W3C */     
+  background: -webkit-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* W3C */     
+}
+
+.jumbotron {
+  margin-top: -50px;
 }
 
 .bikeCarousel {
@@ -17,6 +21,10 @@ body {
   font-family: Dosis, Verdana, sans-serif;
   color: #e8600c;
   font-size: 1.5em;
+}
+
+#carouselContainer {
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -45,4 +53,8 @@ p {
 
 #landingPage {
   font-size: 2.0em;
+}
+
+.btn {
+  color: white !important;
 }
