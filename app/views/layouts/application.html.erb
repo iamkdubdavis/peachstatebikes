@@ -28,17 +28,22 @@
       </div>
       
       <div class="collapse navbar-collapse" id="main-nav-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "About", static_pages_about_path %></li>
-          <li><%= link_to "Products", products_path %></li>
-          <li><%= link_to "Contact", static_pages_contact_path %></li>
-        </ul>
         <%= form_tag("/products", method: "get", class: 'navbar-form pull-left') do %>
           <%= label_tag(:q, "Search for:") %>
           <%= text_field_tag(:q) %>
           <%= submit_tag("Search") %>
         <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About", static_pages_about_path %></li>
+          <li><%= link_to "Products", products_path %></li>
+          <li><%= link_to "Contact", static_pages_contact_path %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+          <% else %>
+            <li><%= link_to('Log In', new_user_session_path) %>
+          <% end %>
+        </ul>
       </div>
     </div>
   </nav>
@@ -48,6 +53,8 @@
     <h2>Your source for new and used bikes throughout Georgia.</h2>
   </div>
   
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 <%= yield %>
 
 </body>

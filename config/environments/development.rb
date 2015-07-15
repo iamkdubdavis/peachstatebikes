@@ -34,4 +34,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # Ensure that all dynamic links inside emails from dev environment generate correct URLs
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
