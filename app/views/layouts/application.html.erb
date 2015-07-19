@@ -17,7 +17,7 @@
 
 <body>
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -28,12 +28,13 @@
       </div>
       
       <div class="collapse navbar-collapse" id="main-nav-collapse">
-        <%= form_tag("/products", method: "get", class: 'navbar-form pull-left') do %>
-          <%= label_tag(:q, "Search for:") %>
-          <%= text_field_tag(:q) %>
-          <%= submit_tag("Search") %>
-        <% end %>
         <ul class="nav navbar-nav navbar-right">
+          <li><%= form_tag("/products", method: "get", class: 'navbar-form pull-left') do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search") %>
+          <% end %>
+          </li>
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", static_pages_about_path %></li>
           <li><%= link_to "Products", products_path %></li>
