@@ -34,6 +34,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 # Add Devise gem for authentication
 gem 'devise'
+# Add CanCanCan for authorization
+gem 'cancancan'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
