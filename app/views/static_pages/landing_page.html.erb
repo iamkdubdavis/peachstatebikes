@@ -10,8 +10,8 @@
     <!-- WRAPPER FOR SLIDES -->
     <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
-      <div class="item<%= " active" if product == @products.first %>">
-          <%= image_tag(product.image_url) %>
+        <div class="item<%= " active" if product == @products.first %>">
+          <%= image_tag(product.image_url, class: "product_show_img") %>
           <div class="carousel-caption bikeCaption">
             <%= product.name %>
           </div> <!-- CLOSES CAROUSEL CAPTION -->
