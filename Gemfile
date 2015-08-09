@@ -36,7 +36,8 @@ gem 'spring',        group: :development
 gem 'devise'
 # Add CanCanCan for authorization
 gem 'cancancan'
-
+# Add will_paginate gem for pagination on products with comments
+gem 'will_paginate', '3.0.6'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
