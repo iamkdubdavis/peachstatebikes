@@ -8,6 +8,10 @@ group :development, :test do
   gem 'sqlite3'
   # gem 'rspec-rails', '3.0'
 end
+
+group :development, :test do
+  gem 'rspec-rails', '3.0.1'
+end
 # Use PostgreSQL and Rails12 Factor for Heroku Production
 group :production do
   gem 'rails_12factor'
