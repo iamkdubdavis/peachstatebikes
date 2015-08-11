@@ -6,6 +6,7 @@ gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record 
 group :development, :test do
   gem 'sqlite3'
+  # gem 'rspec-rails', '3.0'
 end
 # Use PostgreSQL and Rails12 Factor for Heroku Production
 group :production do
